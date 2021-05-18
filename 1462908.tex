@@ -6,6 +6,7 @@
 \usepackage{lmodern}
 \usepackage{microtype}
 
+\newcommand{\ZZ}{\mathbb{Z}}
 
 \title{Símbol de Jacobi}
 \author{Claudi Lleyda Moltó}
@@ -13,4 +14,68 @@
 
 \begin{document}
 \maketitle
+
+\paragraph{El Símbol de Jacobi} Sigui~\(m\) un enter positiu senar.
+Podem escriure així~\(m=p_{1}\cdots p_{s}\) on els~\(p_{i}\) són primers senars,
+no necessàriament diferents.
+Es defineix el~\emph{símbol de Jacobi} com:
+\[
+    \Bigl(\frac{a}{m}\Bigr)
+    =
+    \prod_{i=1}^{s}
+    \Bigl(\frac{a}{p_{i}}\Bigr).
+\]
+
+\begin{enumerate}
+    \item[\textbf{a)}] Sigui~\(m\geq2\) un nombre enter.
+        Donat~\(a\in\ZZ\) un nombre primer amb~\(m\),
+        considerem l'aplicació~\(\mu_{a}:\ZZ/m\ZZ\longrightarrow\ZZ/m\ZZ\)
+        definida com~\(\mu_{a}(n)=an\) per a tot~\(n\in\ZZ/m\ZZ\).
+        \begin{enumerate}
+            \item[\textbf{i)}] Demostreu que~\(\mu_{a}\) és un automorfisme.
+        \end{enumerate}
+\end{enumerate}
+
+Primer veiem que~\(\mu_{a}\) és un morfisme de grups.
+Per a tots~\(x,y\in\ZZ/m\ZZ\) tenim
+\[
+    \mu_{a}(x+y) = a(x+y) = ax + ay = \mu_{a}(x) + \mu_{a}(y)
+    \qquad
+    \text{i}
+    \qquad
+    \mu_{a}(0) = a0 = 0.
+\]
+Per últim veiem que per a tot~\(n\in\ZZ/m\ZZ\) es satisfà
+\[
+    \mu_{a}(-n) = a(-n) = -(an) = -\mu_{a}(n),
+\]
+i concloem que~\(\mu_{a}\) és un morfisme de grups.
+
+Veiem ara que~\(\mu_{a}\) és bijectiva.
+Per això en tenim prou amb veure que és exhaustiva,
+donat que~\(\ZZ/m\ZZ\) és un finit.
+
+Observem que podem veure que~\(\mu_{a}\) és exhaustiva veient que~\(a\) té
+invers a~\(\ZZ/m\ZZ\),
+ja que aleshores tindríem
+\[
+    \mu_{a}(a^{-1}n) = aa^{-1}n = n
+\]
+per a tot~\(n\in\ZZ/m\ZZ\).
+
+Veiem doncs que~\(a\) és invertible a~\(\ZZ/m\ZZ\).
+Recordem que hem suposat que~\(a\) i~\(m\) són coprimers.
+Aleshores pel Lema de Bézout tenim que existeixen~\(b,c\in\ZZ\) tals que
+\[
+    ab + mc = 1,
+\]
+i per tant
+\[
+    ab \equiv 1 \pmod{m},
+\]
+i veiem~\(a\) és invertible a~\(\ZZ/m\ZZ\),
+pel que tenim que~\(\mu_{a}\) és exhaustiva,
+i per tant bijectiva,
+com ens calia demostrar.
+
 \end{document}
