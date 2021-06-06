@@ -189,4 +189,43 @@ i per tant~\(\mu_{ab} = \mu_{a}\circ\mu_{b}\).
     \]
 \end{solution}
 
+\begin{enumerate}
+    \item[]\begin{enumerate}
+        \item[\textbf{ii)}] Demostreu que si~\(m=m_{1}m_{2}\),
+            amb~\(\gcd(m_{1},m_{2})=1\), aleshores
+            \[
+                \Bigl[\frac{a}{m}\Bigr]
+                =
+                \Bigl[\frac{a}{m_{1}}\Bigr]
+                \Bigl[\frac{a}{m_{2}}\Bigr].
+            \]
+    \end{enumerate}
+\end{enumerate}
+
+\begin{solution}
+    Podem fer la demostració per~\(m_{1},m_{2}\) primers, i generalitzar-la al
+    resultat que volem, així que suposem que~\(m_{1}\) i~\(m_{2}\) són primers
+    diferents. Aleshores
+    \[
+        \ZZ/m\ZZ
+        \cong
+        \ZZ/m_{1}\ZZ\times\ZZ/m_{2}\ZZ
+    \]
+    Observem que el signe d'una permutació és igual a~\(-1\) elevat a la meitat
+    del nombre d'elements que no són fixats per aquesta. Per tant el signe de la
+    permutació~\(\mu_{a}\) a~\(\ZZ/m\ZZ\) serà igual a la meitat de la quantitat
+    d'elements que són fixats per~\(\mu_{a}\) simultàniament a~\(\ZZ/m_{1}\ZZ\)
+    i a~\(\ZZ/m_{2}\ZZ\).
+
+    Aleshores, si definim~\(\mu'_{1}\) com el nombre d'elements no fixats
+    per~\(\mu_{a}\) a~\(\ZZ/m_{1}\ZZ\) i~\(\mu'_{2}\) com el nombre d'elements
+    no fixats per~\(\mu_{a}\) a~\(\ZZ/m_{2}\ZZ\) tenim que el nombre d'elements
+    no fixats per~\(\mu_{a}\) a~\(\ZZ/m\ZZ\) és la meitat de
+    \[
+        (m_{2}-m'_{2})m'_{1} + (m_{1}-m'_{1})m'_{2} + m'_{1}m'_{2},
+    \]
+    d'on veiem que aquest nombre presenta la mateixa paritat que~\(m'_{1}\)
+    i~\(m'_{2}\), i hem acabat.
+\end{solution}
+
 \end{document}
