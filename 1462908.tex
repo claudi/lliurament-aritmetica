@@ -316,28 +316,31 @@ Es defineix el~\emph{símbol de Jacobi} com:
         xinès,~\(N(a,b)=an+b\) i~\(M(a,b)=bm+a\).
 \end{enumerate}
 
-Observem primer que si demostrem que~\(N\) és una bijecció podem obtenir el
-mateix resultat per~\(M\).
+\begin{solution}
+    Observem primer que si demostrem que~\(N\) és una bijecció podem obtenir el
+    mateix resultat per~\(M\).
 
-Veiem que~\(N\) és bijectiva. Suposem que
-existeixen~\((a,b),(a',b')\in\ZZ/m\ZZ\times\ZZ/n\ZZ\) tals
-que~\(N(a,b)=N(a',b')\). Això vol dir que~\(bm+a\equiv b'm+a'\pmod{mn}\), i per
-tant~\((b-b')m\equiv a'-a\pmod{mn}\).
+    Veiem que~\(N\) és bijectiva. Suposem que
+    existeixen~\((a,b),(a',b')\in\ZZ/m\ZZ\times\ZZ/n\ZZ\) tals
+    que~\(N(a,b)=N(a',b')\). Això vol dir que~\(bm+a\equiv b'm+a'\pmod{mn}\), i
+    per tant~\((b-b')m\equiv a'-a\pmod{mn}\).
 
-Si fos~\(a\equiv a'\pmod{m}\), aleshores tindríem~\(b\equiv b'\pmod{mn}\), i per
-tant seria~\((a,b)\equiv(a',b')\), i simètricament si~\(b\equiv b'\pmod{n}\).
+    Si fos~\(a\equiv a'\pmod{m}\), aleshores tindríem~\(b\equiv b'\pmod{mn}\), i
+    per tant seria~\((a,b)\equiv(a',b')\), i simètricament si~\(b\equiv
+    b'\pmod{n}\).
 
-Si fos~\((a-a')m\equiv b-b'\pmod{mn}\),
-aleshores~\((a-a')nm\equiv(b'-b)m\pmod{mn}\), i
-tindríem~\(0\equiv(b'-b)m\pmod{mn}\), pel que seria~\(b'\equiv b\) i~\(a'\equiv
-a'\), pel que~\(N\) és injectiva.
+    Si fos~\((a-a')m\equiv b-b'\pmod{mn}\),
+    aleshores~\((a-a')nm\equiv(b'-b)m\pmod{mn}\), i
+    tindríem~\(0\equiv(b'-b)m\pmod{mn}\), pel que seria~\(b'\equiv b\)
+    i~\(a'\equiv a'\), pel que~\(N\) és injectiva.
 
-Veiem ara que~\(N\) és exhaustiva. Si prenem un element~\(x\in\ZZ/mn\ZZ\) podem
-prendre~\(b=x\pmod{n}\) i~\(a=(x-b)n^{-1}\). Per tant~\(N\) és exhaustiva i
-tenim que ambdues~\(N\) i~\(M\) són bijectives.
+    Veiem ara que~\(N\) és exhaustiva. Si prenem un element~\(x\in\ZZ/mn\ZZ\)
+    podem prendre~\(b=x\pmod{n}\) i~\(a=(x-b)n^{-1}\). Per tant~\(N\) és
+    exhaustiva i tenim que ambdues~\(N\) i~\(M\) són bijectives.
 
-Per últim, tenim que~\(L\) és bijectiva, perquè de fet el teorema ens diu que és
-un isomorfisme.
+    Per últim, tenim que~\(L\) és bijectiva, perquè de fet el teorema ens diu
+    que és un isomorfisme.
+\end{solution}
 
 \begin{enumerate}
     \item[\textbf{e)}] Demostreu que per a tot~\(b\in\ZZ/m\ZZ\), el signe de la
