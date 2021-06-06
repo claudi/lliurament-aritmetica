@@ -236,4 +236,54 @@ i per tant~\(\mu_{ab} = \mu_{a}\circ\mu_{b}\).
     i~\(m'_{2}\), i hem acabat.
 \end{solution}
 
+\begin{enumerate}
+    \item[\textbf{c)}] Demostreu que per a tot~\(m\) senar i~\(a\) primer
+        amb~\(m\) tenim que
+        \[
+            \Bigl[\frac{a}{m}\Bigr]
+            =
+            \Bigl(\frac{a}{m}\Bigr).
+        \]
+\end{enumerate}
+
+\begin{solution}
+    Si~\(m=p_{1}\cdots p_{s}\) on els~\(p_{i}\) són primers senars, no
+    necessàriament diferents, per l'apartat anterior tenim que
+    \[
+        \Bigl[\frac{a}{m}\Bigr]
+        =
+        \prod_{i=1}^{s}\Bigl[\frac{a}{p}\Bigr],
+    \]
+    i per tant només ens cal demostrar-ho pel cas~\(m=p\) primer.
+    Si~\(N\) és l'ordre de~\(m\) a~\((\ZZ/p\ZZ)^{\times}\) tenim que la
+    permutació~\(\mu_{a}\) descompon en~\((p-1)/N\) òrbites de longitud~\(N\), i
+    per tant
+    \[
+        \sgn(\mu_{a}) = \bigl((-1)^{N-1}\bigr)^{(p-1)/N}.
+    \]
+    Observem que si~\(N\) és senar tindrem~\(\sgn(\mu_{a})=1\), i tindrem que
+    existeix un~\(q\) tal que~\(q^{2}=a\). En efecte,~\(q=a^{(N+1)/2}\) ho
+    satisfà.
+
+    Si~\(N\) és parell, tindrem que~\(N=2M\) i~\(a^{N}\equiv1\pmod{p}\).
+    Ara bé, pel criteri d'Euler tenim que~\(a\) és quadrat si i només
+    si~\(a^{(p-1)/2}\equiv1\pmod{p}\), i per tant
+    \[
+        a^{(p-1)/2}
+        \equiv
+        (a^{N/2})^{(p-1)/N}
+        \equiv
+        (a^{M})^{(p-1)/N}
+        \equiv
+        (-1)^{(p-1)/N},
+    \]
+    pel que
+    \[
+        \biggl[\frac{a}{p}\biggr]
+        =
+        \biggl(\frac{a}{p}\biggr),
+    \]
+    i hem demostrat el que volíem.
+\end{solution}
+
 \end{document}
