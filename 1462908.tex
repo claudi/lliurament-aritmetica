@@ -46,47 +46,47 @@ Es defineix el~\emph{símbol de Jacobi} com:
 \end{enumerate}
 
 \begin{solution}
-Primer veiem que~\(\mu_{a}\) és un morfisme de grups.
-Per a tots~\(x,y\in\ZZ/m\ZZ\) tenim
-\[
-    \mu_{a}(x+y) = a(x+y) = ax + ay = \mu_{a}(x) + \mu_{a}(y)
-    \qquad
-    \text{i}
-    \qquad
-    \mu_{a}(0) = a0 = 0.
-\]
-Per últim veiem que per a tot~\(n\in\ZZ/m\ZZ\) es satisfà
-\[
-    \mu_{a}(-n) = a(-n) = -(an) = -\mu_{a}(n),
-\]
-i concloem que~\(\mu_{a}\) és un morfisme de grups.
+    Primer veiem que~\(\mu_{a}\) és un morfisme de grups.
+    Per a tots~\(x,y\in\ZZ/m\ZZ\) tenim
+    \[
+        \mu_{a}(x+y) = a(x+y) = ax + ay = \mu_{a}(x) + \mu_{a}(y)
+        \qquad
+        \text{i}
+        \qquad
+        \mu_{a}(0) = a0 = 0.
+    \]
+    Per últim veiem que per a tot~\(n\in\ZZ/m\ZZ\) es satisfà
+    \[
+        \mu_{a}(-n) = a(-n) = -(an) = -\mu_{a}(n),
+    \]
+    i concloem que~\(\mu_{a}\) és un morfisme de grups.
 
-Veiem ara que~\(\mu_{a}\) és bijectiva.
-Per això en tenim prou amb veure que és exhaustiva,
-donat que~\(\ZZ/m\ZZ\) és un finit.
+    Veiem ara que~\(\mu_{a}\) és bijectiva.
+    Per això en tenim prou amb veure que és exhaustiva,
+    donat que~\(\ZZ/m\ZZ\) és un finit.
 
-Observem que podem veure que~\(\mu_{a}\) és exhaustiva veient que~\(a\) té
-invers a~\(\ZZ/m\ZZ\),
-ja que aleshores tindríem
-\[
-    \mu_{a}(a^{-1}n) = aa^{-1}n = n
-\]
-per a tot~\(n\in\ZZ/m\ZZ\).
+    Observem que podem veure que~\(\mu_{a}\) és exhaustiva veient que~\(a\) té
+    invers a~\(\ZZ/m\ZZ\),
+    ja que aleshores tindríem
+    \[
+        \mu_{a}(a^{-1}n) = aa^{-1}n = n
+    \]
+    per a tot~\(n\in\ZZ/m\ZZ\).
 
-Veiem doncs que~\(a\) és invertible a~\(\ZZ/m\ZZ\).
-Recordem que hem suposat que~\(a\) i~\(m\) són coprimers.
-Aleshores pel Lema de Bézout tenim que existeixen~\(b,c\in\ZZ\) tals que
-\[
-    ab + mc = 1,
-\]
-i per tant
-\[
-    ab \equiv 1 \pmod{m},
-\]
-i veiem~\(a\) és invertible a~\(\ZZ/m\ZZ\),
-pel que tenim que~\(\mu_{a}\) és exhaustiva,
-i per tant bijectiva,
-com ens calia demostrar.
+    Veiem doncs que~\(a\) és invertible a~\(\ZZ/m\ZZ\).
+    Recordem que hem suposat que~\(a\) i~\(m\) són coprimers.
+    Aleshores pel Lema de Bézout tenim que existeixen~\(b,c\in\ZZ\) tals que
+    \[
+        ab + mc = 1,
+    \]
+    i per tant
+    \[
+        ab \equiv 1 \pmod{m},
+    \]
+    i veiem~\(a\) és invertible a~\(\ZZ/m\ZZ\),
+    pel que tenim que~\(\mu_{a}\) és exhaustiva,
+    i per tant bijectiva,
+    com ens calia demostrar.
 \end{solution}
 
 \begin{enumerate}
@@ -97,16 +97,16 @@ com ens calia demostrar.
 \end{enumerate}
 
 \begin{solution}
-Tenim que per a tot~\(n\in\ZZ/m\ZZ\) es satisfà
-\[
-    \mu_{ab}(n)
-    = abn
-    = a(bn)
-    = \mu_{a}(bn)
-    = \mu_{a}\bigl(\mu_{b}(n)\bigr)
-    = \mu_{a}\circ\mu_{b}(n),
-\]
-i per tant~\(\mu_{ab} = \mu_{a}\circ\mu_{b}\).
+    Tenim que per a tot~\(n\in\ZZ/m\ZZ\) es satisfà
+    \[
+        \mu_{ab}(n)
+        = abn
+        = a(bn)
+        = \mu_{a}(bn)
+        = \mu_{a}\bigl(\mu_{b}(n)\bigr)
+        = \mu_{a}\circ\mu_{b}(n),
+    \]
+    i per tant~\(\mu_{ab} = \mu_{a}\circ\mu_{b}\).
 \end{solution}
 
 \begin{enumerate}
