@@ -7,6 +7,7 @@
 \usepackage{microtype}
 
 \newcommand{\ZZ}{\mathbb{Z}}
+\newcommand{\id}{\mathrm{id}}
 
 \DeclareMathOperator{\sgn}{sgn}
 
@@ -352,5 +353,52 @@ Es defineix el~\emph{símbol de Jacobi} com:
         donada~\(((\sigma_{b}\circ\mu_{n})\times i)(a,b)=(na+b,b)\).
         Ídem amb~\(L^{-1}M\) i~\(i\times(\sigma_{a}\circ\mu_{m})\).
 \end{enumerate}
+
+\begin{solution}
+    Si~\(b=0\) tenim que~\(\sigma_{b}=\id\), i per tant té signe~\(1\).
+
+    Si~\(b\neq0\) tenim que existeixen~\(a\) i~\(a'\) tals
+    que~\(\sigma_{b}(a)=a'\) i~\(\sigma_{b}(a')=a\) si i només si~\(a+b=a'\)
+    i~\(a'+b=a\), que és equivalent a~\(a+2b=a\), que només pot ser cert
+    si~\(2b=0\). Ara bé, hem suposat~\(b\neq0\), i~\(m\) és senar, pel
+    que~\(2b\neq0\) i tenim que la descomposició en transposicions de la
+    permutació~\(\sigma_{b}\) no té cap element repetit. Per tant, donat
+    que~\(\sigma_{b}\) descompon en~\(m-1\) transposicions tenim que té
+    signe~\((-1)^{m-1}\), que per ser~\(m\) senar és~\(1\).
+
+    Tenim que
+    \begin{multline*}
+        \bigl((\sigma_{b}\mu_{n})\times i\bigr)(a,b)
+        =
+        \bigl(\sigma_{b}\mu_{n}(a),b\bigr)
+        =
+        \bigl(\sigma_{b}(an),b\bigr)
+        =
+        (an+b,b)
+        = \\ =
+        (an+b,b)
+        =
+        L^{-1}(an+b)
+        =
+        L^{-1}N(a,b).
+    \end{multline*}
+    i
+    \begin{multline*}
+        (i\times\sigma_{a}\mu_{m})(a,b)
+        =
+        \bigl(a,\sigma_{a}\mu_{m}(b))\bigr)
+        =
+        \bigl(a,\sigma_{a}(bm)\bigr)
+        =
+        (a,bm+a)
+        = \\ =
+        (a,bm+a)
+        =
+        L^{-1}(bm+a)
+        =
+        L^{-1}M(a,b),
+    \end{multline*}
+    on hem utilitzat~\(bm+a\equiv a\pmod{m}\).
+\end{solution}
 
 \end{document}
