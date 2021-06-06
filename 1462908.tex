@@ -8,6 +8,8 @@
 
 \newcommand{\ZZ}{\mathbb{Z}}
 
+\DeclareMathOperator{\sgn}{sgn}
+
 \newenvironment{solution}{
     \renewcommand\qedsymbol{\ensuremath{\lozenge}}
     \begin{proof}[Solució]
@@ -155,5 +157,19 @@ i per tant~\(\mu_{ab} = \mu_{a}\circ\mu_{b}\).
 \begin{solution}
     % TODO
 \end{solution}
+
+\begin{enumerate}
+    \item[\textbf{b)}] Denotem que~\([\frac{a}{m}]\) el signe~\(\sgn(\mu_{a})\)
+        de la permutació donada per l'aplicació~\(\mu_{a}\) a~\(\ZZ/m\ZZ\).
+        \begin{enumerate}
+            \item[\textbf{i)}] Demostreu que si~\(a=a_{1}a_{2}\), aleshores
+                \[
+                    \Bigl[\frac{a}{m}\Bigr]
+                    =
+                    \Bigl[\frac{a_{1}}{m}\Bigr]
+                    \Bigl[\frac{a_{2}}{m}\Bigr].
+                \]
+        \end{enumerate}
+\end{enumerate}
 
 \end{document}
