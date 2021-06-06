@@ -416,7 +416,25 @@ Es defineix el~\emph{símbol de Jacobi} com:
 \end{enumerate}
 
 \begin{solution}
-    % TODO
+    Observem que
+    \[
+        \sgn(L^{-1}M)
+        =
+        \sgn\bigl(i\times(\sigma_{a}\mu_{m})\bigr)
+        =
+        \sgn(\sigma_{a})\sgn(\mu_{m})
+        =
+        \sgn(\mu_{m})
+        =
+        \Bigl(\frac{m}{n}\Bigr)
+    \]
+    i utilitzant l'ordre lexicogràfic de~\(\ZZ/m\ZZ\times\ZZ/n\ZZ\) obtenim que
+    \[
+        \sgn(L^{-1}M)
+        =
+        (-1)^{(m-1)(n-1)/4}.
+        \qedhere
+    \]
 \end{solution}
 
 \begin{enumerate}
